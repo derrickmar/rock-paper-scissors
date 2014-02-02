@@ -1,0 +1,145 @@
+@import "bootstrap";
+html, body {
+  margin:0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Museo-700';
+  src: url('webfonts/29B547_0_0.eot');
+  src: url('webfonts/29B547_0_0.eot?#iefix') format('embedded-opentype'),
+  url('webfonts/29B547_0_0.woff') format('woff'),
+  url('webfonts/29B547_0_0.ttf') format('truetype');
+}
+
+h1 { 
+  font-family: Museo-700; 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+body {
+  background-color: #FF530D;
+  font-size: 100%;
+  color: #E8E8E8;
+}
+
+h1 {
+  font-family: 'Museo-700', Georgia, Serif;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 69px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+div.full {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.second {
+  background-color: #E80C7A;
+}
+
+.third {
+  background-color: #FF0DFF;
+}
+
+.center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+
+h1.tighten {
+  margin: 10px 0px 5px;
+}
+
+h3.tighten {
+  margin: 3px 0px 5px;
+}
+
+.top-bottom-line {
+  height: auto;
+  display: inline-block;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 0px 30px;
+}
+
+.top-bottom-line.nopadding {
+  padding: 0px 20px;
+  margin: 0px 10px;
+}
+
+.large-square {
+  border: 5px solid #E8E8E8;;
+  height: 250px;
+  width: 250px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -khtml-border-radius: 30px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.small-square {
+  border: 2px solid #E8E8E8;;
+  height: 65px;
+  width: 65px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -khtml-border-radius: 10px;
+  margin: auto;
+}
+
+/** animate.css plugin customizations */
+.animated.flash {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+}
+
+h3.animated.flash:hover {
+  animation-iteration-count: 0;
+  -webkit-animation-iteration-count:0;
+  cursor: pointer;
+}
+
+/** sprites */
+
+.rock {
+  background: url(/assets/rps_icons_sprites.png) no-repeat -21.6px -11.2px;
+  background-size: 680px;
+  margin: auto;
+  width: 192.8px;
+  height: 203.2px;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+}
+
+.paper {
+  background: url(/assets/rps_icons_sprites.png) no-repeat -616px -52px;
+  width: 509px;
+  height: 476px;
+}
+
+.scissors {
+  background: url(/assets/rps_icons_sprites.png) no-repeat -1180px -36px;
+  width: 510px;
+  height: 500px;
+}
+
